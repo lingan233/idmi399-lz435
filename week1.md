@@ -74,13 +74,14 @@ This question was similar to the last question. I know how to increment, decreme
 ### Study Plan: Top 100 Liked
 ### Time Taken: 4 hrs
 
-This problem is kinda hard. I started with a dictionary/mapping for converting number to letters. Then I realized that I need to remember the previous number’s letters in the for loop to continue mapping it. So I went to study backtracking. Hopefully it will make more sense. 
+This problem is more difficult than the previous two questions. I started with a dictionary/mapping for converting number to letters. Then I realized that I need to remember the previous number’s letters in the for loop to continue mapping it. So I went to study backtracking. 
 
-I watched youtube videos on backtracking and it is somehow related to permutation and recursion. I used some help from chatGBT to explain the pseudo code of permutation, etc. I also used chatGBT to debug. I was using permutation then I realized that combination is better for this case, so I changed to combination. Permutation and combination are similar and both uses backtracking. The only difference between the two is that combination doesn’t produce replicates in different order. 
+I watched YouTube videos on backtracking and it is somehow related to permutation and recursion. I used some help from chatGBT to explain the pseudo code of permutation, etc. I also used chatGBT to debug. I was using permutation then I realized that combination is better for this case, so I changed to combination. Permutation and combination are similar and both uses backtracking. The only difference between the two is that combination doesn’t produce replicates in different order. 
 
 To change permutation into combination, the previous number is skipped in the next loop like “12, 13; 23” instead of “12, 13; 21, 23; 31, 32” where every number no matter if it has been run will run again. 
 
-In this program, I used combination, backtracking, and recursion to be able to take letters and combine them and produce an array of results. Detailed comments on the solution code explains what I did in the code. 
+This program uses numbers as input to generate letter combinations. Each number is converted into an array of letters, then the letters use combination, backtracking, and recursion to produce an array of results as letter combinations. Detailed comments on the solution code explain what I did in the code. 
+
 
     class Solution:
 
