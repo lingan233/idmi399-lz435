@@ -61,12 +61,12 @@ This question was similar to the last question. I know how to increment, decreme
     } 
     };
 
-/**
-* const counter = createCounter(5)
-* counter.increment(); // 6
-* counter.reset(); // 5
-* counter.decrement(); // 4
-*/
+    /**
+    * const counter = createCounter(5)
+    * counter.increment(); // 6
+    * counter.reset(); // 5
+    * counter.decrement(); // 4
+    */
 
 # 3. Letter Combinations of a Phone Number
 #### https://leetcode.com/problems/letter-combinations-of-a-phone-number/
