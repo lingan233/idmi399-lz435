@@ -12,24 +12,27 @@ It took me a while to get to the solution of creating a variable inside the retu
 
 After I submitted the solution that I thought was good, I realized that the best solution was just to return n++. I thought n=n+1 is the same as n++, but it is not. Returning n++ is returning n and then adding 1. Always those simple and stupid mistakes as always. Returning n++ probably has the shortest runtime and takes the minimal memory. So I submitted it again but I don’t know why my runtime and memory are worse than my first submission. I guess it didn’t change that much, but it is definitely better practice to do the simpler solution. 
 
-    /**
-    * @param {number} n
-    * @return {Function} counter
-    */
-    var createCounter = function(n) {
+```javascript
+/**
+* @param {number} n
+* @return {Function} counter
+*/
+var createCounter = function(n) {
 
-        return function() {
-            return n++;
-        };
-
+    return function() {
+        return n++;
     };
 
-    /** 
-    * const counter = createCounter(10)
-    * counter() // 10
-    * counter() // 11
-    * counter() // 12
-    */
+};
+
+/** 
+* const counter = createCounter(10)
+* counter() // 10
+* counter() // 11
+* counter() // 12
+*/
+```
+
 
 # 2. Counter II
 #### https://leetcode.com/problems/counter-ii/
@@ -39,34 +42,36 @@ After I submitted the solution that I thought was good, I realized that the best
 
 This question was similar to the last question. I know how to increment, decrement, and reset. I just forgot about how to add that function inside this createCounter function. I looked online and find how this would work. Seems like people put it in a return. After I submitted the solution, I realized that some people still create the function inside this function and then return the function name only in the return. 
 
-    /**
-    * @param {integer} init
-    * @return { increment: Function, decrement: Function, reset: Function }
-    */
-    var createCounter = function(init) {
-    let value = init;
-    return {
-        increment: function(){
-        value += 1;
-        return value;
-        },
-        decrement: function(){
-        value -= 1;
-        return value;
-        },
-        reset: function(){
-        value = init;
-        return value;
-        }
-    } 
-    };
+```javascript
+/**
+* @param {integer} init
+* @return { increment: Function, decrement: Function, reset: Function }
+*/
+var createCounter = function(init) {
+let value = init;
+return {
+    increment: function(){
+    value += 1;
+    return value;
+    },
+    decrement: function(){
+    value -= 1;
+    return value;
+    },
+    reset: function(){
+    value = init;
+    return value;
+    }
+} 
+};
 
-    /**
-    * const counter = createCounter(5)
-    * counter.increment(); // 6
-    * counter.reset(); // 5
-    * counter.decrement(); // 4
-    */
+/**
+* const counter = createCounter(5)
+* counter.increment(); // 6
+* counter.reset(); // 5
+* counter.decrement(); // 4
+*/
+```
 
 # 3. Letter Combinations of a Phone Number
 #### https://leetcode.com/problems/letter-combinations-of-a-phone-number/
@@ -82,8 +87,8 @@ To change permutation into combination, the previous number is skipped in the ne
 
 This program uses numbers as input to generate letter combinations. Each number is converted into an array of letters, then the letters use combination, backtracking, and recursion to produce an array of results as letter combinations. Detailed comments on the solution code explain what I did in the code. 
 
-
-    class Solution:
+```python 3
+class Solution:
 
     def letterCombinations(self, digits: str) -> List[str]:
         letter = {
@@ -117,3 +122,5 @@ This program uses numbers as input to generate letter combinations. Each number 
             combine([], 0)
 
         return result # return empty array if there is no input                        
+```
+    
