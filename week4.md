@@ -16,6 +16,28 @@ The code works as follows:
 
 In this method `combinationSum`, the function has a recursive function built inside called `dfs` that will call itself until all the possible unique combination is found. 
 
+```python
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:    
+        combinations = []
+
+        def dfs(i, current, target):
+            if target <= 0:
+                if target == 0:
+                    combinations.append(current.copy())
+                return
+            
+            if i < len(candidates):
+                current.append(candidates[i])
+                dfs(i, current, target - candidates[i])
+                current.pop()
+                dfs(i+1, current, target)
+
+        dfs(0, [], target)
+        print(combinations)
+        return combinations
+
+```
 # 12. Add Two Promises
 #### https://leetcode.com/problems/add-two-promises/
 ### Level: Easy
