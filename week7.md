@@ -1,4 +1,5 @@
 # 20. Interval Cancellation
+#### https://leetcode.com/problems/interval-cancellation/
 ### Level: Easy
 ### Study Plan: 30 Days of JavaScript
 ### Time Taken: 1 hr
@@ -60,6 +61,7 @@ var cancellable = function(fn, args, t) {
  */
 ```
 # 21. Debounce
+#### https://leetcode.com/problems/debounce/
 ### Level: Medium
 ### Study Plan: 30 Days of JavaScript
 ### Time Taken: 1 hr
@@ -97,6 +99,7 @@ var debounce = function(fn, t) {
 ```
 
 # 22. Is Object Empty
+#### https://leetcode.com/problems/is-object-empty/
 ### Level: Easy
 ### Study Plan: 30 Days of JavaScript
 ### Time Taken: 30 mins
@@ -113,6 +116,7 @@ var isEmpty = function(obj) {
 };
 ```
 # 23.Sort By
+#### https://leetcode.com/problems/sort-by/
 ### Level: Easy
 ### Plan: 30 Days of JavaScript
 ### Time Taken: 30 mins
