@@ -1,32 +1,12 @@
-# Study Plan Analysis (Calculated at Midterm Point)
+# Study Plan Analysis
 
-- Total Questions Attempted: 16
-- Easy Level Questions: 11
+- Total Questions: 31
+- Easy Level Questions: 16
 - Average Time Spent per Easy Question: 1 hr
-- Medium Level Questions: 5
-- Average Time Spent per Medium Question: 3 hrs
-- Hard Level Questions: 0
-
-
-### 30 Days of JavaScript:
-
-- Total Questions Attempted: 10
-- Easy Level Questions: 8
-- Average Time Spent per Easy Question: 44.4 mins
-- Medium Level Questions: 2
-- Average Time Spent per Medium Question: 2 hrs
-
-### Top 100 Liked:
-
-- Total Questions Attempted: 3
-- Medium Level Questions: 3
-- Average Time Spent per Medium Question: 3.7 hrs
-
-### LeetCode 75:
-
-- Total Questions Attempted: 3
-- Easy Level Questions: 3
-- Average Time Spent per Easy Question: 1.5 hrs
+- Medium Level Questions: 14
+- Average Time Spent per Medium Question: 2.6 hrs
+- Hard Level Questions: 1
+- Average Time Spent per Hard Question: 4 hrs
 
 # Concepts Utilized:
 
